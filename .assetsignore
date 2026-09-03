@@ -1,0 +1,8 @@
+# Files in the repo that should NOT be published as part of the site
+wrangler.jsonc
+.assetsignore
+.gitattributes
+.gitignore
+README.md
+scripts/
+_media-source/
