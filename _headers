@@ -1,9 +1,9 @@
-# Cloudflare headers.
-# NOTE: Workers Static Assets applies EVERY matching rule and concatenates
-# same-named headers (no "most specific wins"). So keep a single /* rule
-# rather than per-path Cache-Control overrides that would conflict.
+# Response headers (Netlify / Cloudflare _headers format).
+# NOTE: both hosts apply EVERY matching rule and concatenate same-named
+# headers (no "most specific wins"). Keep a single /* rule rather than
+# per-path Cache-Control overrides that would conflict.
 # Filenames aren't content-hashed; revalidate every load (ETag -> cheap 304).
-# Cloudflare's edge still caches, so origin hits stay low.
+# The CDN edge still caches, so origin hits stay low.
 
 /*
   Cache-Control: public, max-age=0, must-revalidate

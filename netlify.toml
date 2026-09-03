@@ -1,0 +1,5 @@
+# Static site — no build step. Publish the repo root as-is.
+# Headers live in ./_headers, the 404 is served from ./404.html automatically.
+[build]
+  publish = "."
+  command = ""
