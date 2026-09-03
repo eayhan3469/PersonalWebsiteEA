@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egemen Ayhan — Game Developer</title>
+  <meta name="description" data-i18n-attr="content" data-i18n="meta.description"
+    content="Egemen Ayhan — Unity game developer focused on gameplay systems, performance optimization and debugging." />
+
+  <!-- Set the stored/system theme before first paint to avoid a flash -->
+  <script>try{var t=localStorage.getItem("ea-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);else if(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)document.documentElement.setAttribute("data-theme","light");}catch(e){}</script>
+
+  <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f4f4f1" media="(prefers-color-scheme: light)" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Egemen Ayhan" />
+  <meta property="og:title" content="Egemen Ayhan — Game Developer" />
+  <meta property="og:description"
+    content="Unity game developer focused on gameplay systems, performance optimization and debugging." />
+  <meta property="og:url" content="https://www.egemenayhan.net/" />
+  <meta property="og:image" content="https://www.egemenayhan.net/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Egemen Ayhan — Game Developer" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.egemenayhan.net/assets/img/og-image.png" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="canonical" href="https://www.egemenayhan.net/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Egemen Ayhan — home">
+        <span class="brand-mark">EA</span>
+        <span class="brand-name">Egemen Ayhan</span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="#work" data-i18n="nav.work">Work</a></li>
+          <li><a href="#prototypes" data-i18n="nav.prototypes">Prototypes</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" type="button"
+          aria-label="Change language" title="Change language">
+          <span data-lang-label>EN</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" type="button"
+          aria-label="Toggle color theme" title="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="currentColor" />
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="2" x2="12" y2="5" />
+              <line x1="12" y1="19" x2="12" y2="22" />
+              <line x1="2" y1="12" x2="5" y2="12" />
+              <line x1="19" y1="12" x2="22" y2="12" />
+              <line x1="4.5" y1="4.5" x2="6.6" y2="6.6" />
+              <line x1="17.4" y1="17.4" x2="19.5" y2="19.5" />
+              <line x1="4.5" y1="19.5" x2="6.6" y2="17.4" />
+              <line x1="17.4" y1="6.6" x2="19.5" y2="4.5" />
+            </g>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor"
+              d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" type="button"
+          aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">Game Developer</p>
+        <h1 class="hero-title reveal">
+          <span data-i18n="hero.title.line1">Building playable</span><br />
+          <span class="accent" data-i18n="hero.title.line2">imaginary worlds</span>
+        </h1>
+        <p class="hero-lead reveal" data-i18n="hero.lead">
+          Unity developer with 6+ years shipping gameplay systems across
+          multiplayer, roguelike, hypercasual and AR/VR projects — with a focus
+          on performance and debugging.
+        </p>
+        <p class="hero-meta reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <span data-i18n="hero.meta">available for work · Unity / C# · gameplay · İstanbul</span>
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#work" data-i18n="hero.cta.projects">View work</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta.contact">Get in touch</a>
+          <a class="btn btn-ghost" id="cvButton" href="assets/Egemen-Ayhan-CV.pdf"
+            download hidden data-i18n="hero.cta.cv">Download CV</a>
+        </div>
+        <ul class="hero-social reveal" aria-label="Social links">
+          <li><a href="https://www.linkedin.com/in/egemenayhan/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/eayhan3469" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:eayhan3469@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 data-i18n="work.heading">Selected work</h2>
+        </header>
+        <p class="section-intro reveal" data-i18n="work.intro">
+          Shipped titles and projects where I owned gameplay features and systems.
+        </p>
+        <!-- Rendered from assets/js/content.js -->
+        <div class="work-grid" id="workGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROTOTYPES ============ -->
+    <section class="section" id="prototypes">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 data-i18n="prototypes.heading">Prototypes</h2>
+        </header>
+        <p class="section-intro reveal" data-i18n="prototypes.intro">
+          Short prototypes and rapid builds — hover a tile to play, click to open.
+        </p>
+        <!-- Filter chips + grid rendered from assets/js/content.js -->
+        <div class="filter-bar reveal" id="prototypeFilter"></div>
+        <div class="proto-grid" id="prototypeGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 data-i18n="about.heading">About</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-body reveal">
+            <p data-i18n="about.p1">
+              I'm an experienced Unity developer with strong skills in code
+              maintenance and debugging.
+            </p>
+            <p data-i18n="about.p2">
+              My goal is to build efficient, stable and creative game experiences
+              while adding value to every team I work with.
+            </p>
+          </div>
+          <aside class="about-facts reveal">
+            <dl>
+              <div>
+                <dt data-i18n="about.facts.experience">Experience</dt>
+                <dd data-i18n="about.facts.experienceValue">6+ years</dd>
+              </div>
+              <div>
+                <dt data-i18n="about.facts.engine">Main engine</dt>
+                <dd>Unity (C#)</dd>
+              </div>
+              <div>
+                <dt data-i18n="about.facts.focus">Focus</dt>
+                <dd data-i18n="about.facts.focusValue">Gameplay · Optimization · Multiplayer · XR</dd>
+              </div>
+              <div>
+                <dt data-i18n="about.facts.location">Location</dt>
+                <dd data-i18n="about.facts.locationValue">İstanbul, Türkiye</dd>
+              </div>
+              <div>
+                <dt data-i18n="about.facts.interests">Interests</dt>
+                <dd data-i18n="about.facts.interestsValue">Video games · Chess</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 data-i18n="skills.heading">Skills</h2>
+        </header>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.core">Core</h3>
+            <ul>
+              <li>C#</li>
+              <li>OOP</li>
+              <li>Git</li>
+              <li data-i18n="skills.item.cleancode">Clean code &amp; debugging</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.platforms">Engine &amp; Platforms</h3>
+            <ul>
+              <li>Unity</li>
+              <li>AR / VR (XR)</li>
+              <li data-i18n="skills.item.mobile">Mobile (iOS / Android)</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.systems">Systems</h3>
+            <ul>
+              <li data-i18n="skills.item.gameplay">Gameplay systems</li>
+              <li data-i18n="skills.item.optimization">Performance optimization</li>
+              <li>Multiplayer (Mirror)</li>
+              <li data-i18n="skills.item.ai">AI behaviours</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS (hidden until content.js has data) ============ -->
+    <section class="section" id="testimonials" hidden>
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 data-i18n="testimonials.heading">References</h2>
+        </header>
+        <!-- Rendered from assets/js/content.js -->
+        <div class="quote-grid" id="testimonialList"></div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-quiet" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 data-i18n="experience.heading">Experience</h2>
+        </header>
+        <p class="section-intro reveal" data-i18n="experience.intro">
+          Six years across studios in Türkiye.
+        </p>
+        <!-- Rendered from assets/js/content.js -->
+        <ul class="xp-list" id="experienceList"></ul>
+
+        <div class="edu-block reveal">
+          <h3 class="edu-heading" data-i18n="education.heading">Education</h3>
+          <!-- Rendered from assets/js/content.js -->
+          <ul class="edu-list" id="educationList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 data-i18n="contact.heading">Contact</h2>
+        </header>
+        <div class="contact-inner reveal">
+          <p class="contact-lead" data-i18n="contact.lead">
+            Open to gameplay / tools programming roles and interesting
+            collaborations. The fastest way to reach me is email.
+          </p>
+
+          <form class="contact-form" id="contactForm" hidden novalidate>
+            <label class="cf-field">
+              <span data-i18n="contact.form.name">Name</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label class="cf-field">
+              <span data-i18n="contact.form.email">Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label class="cf-field">
+              <span data-i18n="contact.form.message">Message</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" data-i18n="contact.form.send">
+              Send
+            </button>
+            <p class="cf-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <a class="btn btn-primary btn-lg" id="contactEmailBtn" href="mailto:eayhan3469@gmail.com">
+            eayhan3469@gmail.com
+          </a>
+          <ul class="contact-social" aria-label="Social links">
+            <li><a href="https://www.linkedin.com/in/egemenayhan/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/eayhan3469" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Egemen Ayhan</p>
+      <p class="footer-note" data-i18n="footer.note">Built from scratch with HTML &amp; CSS.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/content.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
